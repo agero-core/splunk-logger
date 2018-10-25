@@ -10,13 +10,7 @@ namespace Agero.Core.SplunkLogger.Tests
     [TestClass]
     public class LoggerTests
     {
-        private LoggerTestsSetup _splunkCollectorInfo;
-
-        [TestInitialize]
-        public void TestsSetup()
-        {
-            _splunkCollectorInfo = JsonConvert.DeserializeObject<LoggerTestsSetup>(File.ReadAllText(@"../../../logger-settings.json"));
-        }
+        private readonly LoggerTestsSetup _splunkCollectorInfo = JsonConvert.DeserializeObject<LoggerTestsSetup>(File.ReadAllText(@"../../../logger-settings.json"));
 
         [TestMethod]
         public async Task Log_Should_Return_True_When_Log_To_Splunk_Successful()
