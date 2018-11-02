@@ -12,3 +12,26 @@ Create the json file **logger-settings.json** with the below contents.
   "AuthenticationToken": "<Your Splunk Access Token>"
 }
 ```
+
+## Usage:
+
+```csharp
+ILogger logger = 
+    new Logger
+    (
+        collectorUri: new Uri("<Your Splunk Collector Url>"), 
+        authorizationToken: "<Your Splunk Access Token>", 
+        applicationName: "TestName", 
+        applicationVersion: "1.2.3.4", 
+        timeout: 3000
+    );
+	
+bool result = 
+    logger.Log
+    (
+        type: "TestInfo", 
+        message: "Test message", 
+        data: new { test1 = "test1", test2 = "test2" },
+        correlationId: "1234567"
+    );	
+```
