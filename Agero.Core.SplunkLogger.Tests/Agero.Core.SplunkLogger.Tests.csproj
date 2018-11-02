@@ -11,4 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="$(SolutionDir)\Agero.Core.SplunkLogger\Agero.Core.SplunkLogger.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="logger-settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
