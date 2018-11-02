@@ -59,13 +59,9 @@ This creates the following log in Splunk:
 }
 ```
 
+## Running Test Cases:
 
-## Running Test Cases
-
-### Set up:
-
-Create the json file **logger-settings.json** with the below configuration.
-
+Create the json file **logger-settings.json** with the below configuration under the project **Agero.Core.SplunkLogger.Tests**.
 
 ```json
 {
