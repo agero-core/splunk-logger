@@ -7,10 +7,13 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+    <PackageReference Include="Agero.Core.Checker" Version="1.0.11" />
+    <PackageReference Include="Agero.Core.Lazy" Version="1.0.0" />
     <PackageReference Include="Agero.Core.RestCaller" Version="1.0.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)\Agero.Core.SplunkLogger\Agero.Core.SplunkLogger.csproj" />
+    <ProjectReference Include="..\Agero.Core.SplunkLogger\Agero.Core.SplunkLogger.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="logger-settings.json">
