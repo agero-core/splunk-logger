@@ -12,12 +12,15 @@
     <PackageReference Include="Agero.Core.RestCaller" Version="1.0.14" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Agero.Core.SplunkLogger\Agero.Core.SplunkLogger.csproj" />
   </ItemGroup>
+
   <ItemGroup>
     <None Update="logger-settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
 </Project>
