@@ -77,7 +77,7 @@ namespace Agero.Core.SplunkLogger
         /// <summary>Submits log to Splunk</summary>
         /// <param name="type">Log type (Error, Info, etc.)</param>
         /// <param name="message">Log text message</param>
-        /// <param name="data">Any object which serialized into JSON</param>
+        /// <param name="data">Any object which will be serialized into JSON</param>
         /// <param name="correlationId">Any optional string which can correlate different logs</param>
         /// <returns>Returns flag whether log submitted to Splunk</returns>
         public bool Log(string type, string message, object data = null, string correlationId = null)
@@ -90,7 +90,7 @@ namespace Agero.Core.SplunkLogger
 
             try
             {
-                var response = _restCaller.Post(CollectorUri, body: splunkBody, headers: _headers, timeout: Timeout, compressBody: true);
+                var response = _restCaller.Post(CollectorUri, splunkBody, headers: _headers, timeout: Timeout, compressBody: true);
 
                 if (response.HttpStatusCode == HttpStatusCode.OK)
                     return true;
@@ -116,7 +116,7 @@ namespace Agero.Core.SplunkLogger
         /// <summary>Submits log to Splunk</summary>
         /// <param name="type">Log type (Error, Info, etc.)</param>
         /// <param name="message">Log text message</param>
-        /// <param name="data">Any object which serialized into JSON</param>
+        /// <param name="data">Any object which will be serialized into JSON</param>
         /// <param name="correlationId">Any optional string which can correlate different logs</param>
         /// <returns>Returns flag whether log submitted to Splunk</returns>
         public async Task<bool> LogAsync(string type, string message, object data = null, string correlationId = null)
@@ -129,7 +129,7 @@ namespace Agero.Core.SplunkLogger
 
             try
             {
-                var response = await _restCaller.PostAsync(CollectorUri, body: splunkBody, headers: _headers, timeout: Timeout, compressBody: true);
+                var response = await _restCaller.PostAsync(CollectorUri, splunkBody, headers: _headers, timeout: Timeout, compressBody: true);
 
                 if (response.HttpStatusCode == HttpStatusCode.OK)
                     return true;
@@ -167,7 +167,7 @@ namespace Agero.Core.SplunkLogger
                         applicationName = ApplicationName,
                         applicationVersion = ApplicationVersion,
                         system = LoggerHelper.GetSystemData(),
-                        data = data
+                        data
                     };
                 Trace.WriteLine(JsonConvert.SerializeObject(splunkFailedLog), "ERROR");
 

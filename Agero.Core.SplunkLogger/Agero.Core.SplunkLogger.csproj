@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Agero.Core.SplunkLogger</PackageId>
-    <PackageTags>Logger,Logging,SplunkLogger</PackageTags>
+    <PackageTags>Logger,Logging,Splunk</PackageTags>
     <Version>1.0.0</Version>
     <Authors>Core Automation Team</Authors>
     <Company>Agero Inc.</Company>
     <Copyright>Copyright © Agero 2018</Copyright>
     <Product>SplunkLogger</Product>
-    <Description>.Net library for logging to Splunk</Description>
-    <Title>SplunkLogger</Title>
+    <Description>.NET library for logging to Splunk using HTTP collector.</Description>
+    <Title>Splunk Logger</Title>
     <PackageProjectUrl>https://github.com/agero-core/splunk-logger</PackageProjectUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
