@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agero.Core.SplunkLogger", "Agero.Core.SplunkLogger\Agero.Core.SplunkLogger.csproj", "{B6D2CAD4-2413-4963-A75C-6E81E3B81645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agero.Core.SplunkLogger.Tests", "Agero.Core.SplunkLogger.Tests\Agero.Core.SplunkLogger.Tests.csproj", "{4F75B867-82E9-4CD1-9827-A11AA9FB1DA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6D2CAD4-2413-4963-A75C-6E81E3B81645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D2CAD4-2413-4963-A75C-6E81E3B81645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D2CAD4-2413-4963-A75C-6E81E3B81645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D2CAD4-2413-4963-A75C-6E81E3B81645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F75B867-82E9-4CD1-9827-A11AA9FB1DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F75B867-82E9-4CD1-9827-A11AA9FB1DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F75B867-82E9-4CD1-9827-A11AA9FB1DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F75B867-82E9-4CD1-9827-A11AA9FB1DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
